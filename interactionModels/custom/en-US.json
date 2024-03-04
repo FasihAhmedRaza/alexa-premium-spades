@@ -1,0 +1,731 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "NameOne",
+              "type": "AMAZON.FirstName"
+            },
+            {
+              "name": "NameTwo",
+              "type": "AMAZON.FirstName"
+            },
+            {
+              "name": "NameThree",
+              "type": "AMAZON.FirstName"
+            },
+            {
+              "name": "NameFour",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "name": "createGroups",
+          "samples": [
+            "Alexa groups {NameOne} and {NameTwo} as TEAM one and {NameThree} and {NameFour} as TEAM two",
+            "Group {NameOne} and {NameTwo} as TEAM one {NameThree} and {NameFour} as TEAM two",
+            "Create teams {NameOne} and {NameTwo} as TEAM one {NameThree} and {NameFour} as TEAM two",
+            "{NameOne} and {NameTwo} against {NameThree} and {NameFour}",
+            "Alexa {NameOne} and {NameTwo} against {NameThree} and {NameFour}",
+            "{NameOne} and {NameTwo} versus {NameThree} and {NameFour}",
+            "Alexa {NameOne} and {NameTwo} versus {NameThree} and {NameFour}",
+            "{NameOne} and {NameTwo} against {NameThree} and {NameFour} team"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "number",
+              "type": "customNumberA"
+            },
+            {
+              "name": "numberTwo",
+              "type": "customNumberA"
+            },
+            {
+              "name": "numberThree",
+              "type": "customNumberA"
+            },
+            {
+              "name": "NameTwo",
+              "type": "AMAZON.FirstName"
+            },
+            {
+              "name": "numberFour",
+              "type": "customNumberA"
+            },
+            {
+              "name": "BidNumberOne",
+              "type": "customNumberA"
+            },
+            {
+              "name": "BidNumberTwo",
+              "type": "customNumberB"
+            }
+          ],
+          "name": "ourTeam",
+          "samples": [
+            "we bid {number} tricks",
+            "Alexa we bid {number} tricks",
+            "we bid {number} trick",
+            "Alexa we bid {number} trick",
+            "we bid {number} books",
+            "Alexa we bid {number} books",
+            "we bid {number} book",
+            "Alexa we bid {number} book",
+            "we bid a {number}",
+            "Alexa we bid a {number}",
+            "we\u0027re going for a {number}",
+            "Alexa we\u0027re going for a {number}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "number",
+              "type": "customNumberA"
+            },
+            {
+              "name": "numberB",
+              "type": "customNumberB"
+            },
+            {
+              "name": "NameThree",
+              "type": "AMAZON.FirstName"
+            },
+            {
+              "name": "NameFour",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "name": "oppenentTeam",
+          "samples": [
+            "team two bid first",
+            "team two bids first",
+            "they will take a {number}",
+            "Alexa they will take a {number}",
+            "they bid {number} tricks",
+            "Alexa they bid {number} tricks",
+            "they bid {number} trick",
+            "Alexa they bid {number} trick",
+            "they bid {number} books",
+            "Alexa they bid {number} books",
+            "they bid {number} book",
+            "Alexa they bid {number} book",
+            "they bid a {number}",
+            "Alexa they bid a {number}",
+            "they\u0027re going for a {number}",
+            "they are going for a {number}",
+            "Alexa they\u0027re going for a {number}",
+            "Alexa they are going for a {number}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "ourBoston",
+          "samples": [
+            "we are going for a Boston",
+            "Alexa we are going for a Boston",
+            "we\u0027re going for a Boston",
+            "Alexa we\u0027re going for a Boston"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "ourBoard",
+          "samples": [
+            "Alexa we are going for a board",
+            "we are going for a board",
+            "we\u0027re going for a board",
+            "Alexa we\u0027re going for a board"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "oppenentBoard",
+          "samples": [
+            "they are going for a board",
+            "Alexa they are going for a board",
+            "they\u0027re going for a board",
+            "Alexa they\u0027re going for a board"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "oppenentBoston",
+          "samples": [
+            "Alexa they are going for a Boston",
+            "they are going for a Boston",
+            "they\u0027re going for a Boston",
+            "Alexa they\u0027re going for a Boston"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "scoreTEAMoneA",
+              "type": "teamScoreA"
+            },
+            {
+              "name": "scoreTEAMoneB",
+              "type": "teamScoreB"
+            },
+            {
+              "name": "TeamScoreA",
+              "type": "teamScoreA"
+            },
+            {
+              "name": "TeamScoreB",
+              "type": "teamScoreB"
+            }
+          ],
+          "name": "showScore",
+          "samples": [
+            "what is {TeamScoreA} and {TeamScoreB}",
+            "Alexa what is the score",
+            " what\u0027s the score",
+            " what is the score",
+            "Alexa what\u0027s the score"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "numberB",
+              "type": "customNumberB"
+            },
+            {
+              "name": "numberA",
+              "type": "customNumberA"
+            },
+            {
+              "name": "NameOne",
+              "type": "AMAZON.FirstName"
+            },
+            {
+              "name": "NameTwo",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "name": "ourScore",
+          "samples": [
+            "how many points do we have",
+            "Alexa adds {numberA} to {numberB} for {NameOne} and {NameTwo}",
+            "Alexa adds {numberA} to {numberB}",
+            "whats our score",
+            "Alexa whats our score"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "oppenentScore",
+          "samples": [
+            "how many points do they have",
+            "what\u0027s their score",
+            "Alexa what\u0027s their score"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "whoWinning",
+          "samples": [
+            "which team is winning",
+            "who is winning",
+            "who\u0027s winning",
+            "Alexa who\u0027s winning"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "wholosing",
+          "samples": [
+            "which team is losing",
+            "who is losing",
+            "who\u0027s losing",
+            "Alexa who\u0027s losing"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "lastOurBid",
+          "samples": [
+            "what did we bid",
+            "Alexa what did we bid"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "lastThierBid",
+          "samples": [
+            "what did they bid",
+            "Alexa what did they bid"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "TeamOneScoreA",
+              "type": "teamScoreA"
+            }
+          ],
+          "name": "AddScore",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "number",
+              "type": "customNumberA"
+            },
+            {
+              "name": "numberB",
+              "type": "customNumberB"
+            },
+            {
+              "name": "NameThree",
+              "type": "AMAZON.FirstName"
+            },
+            {
+              "name": "NameFour",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "name": "negativeTeamTwo",
+          "samples": [
+            "they didn\u0027t make their tricks",
+            "they didn\u0027t make their books",
+            "they are in the hole",
+            "they got set",
+            "they were set"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "number",
+              "type": "customNumberA"
+            },
+            {
+              "name": "numberB",
+              "type": "customNumberB"
+            },
+            {
+              "name": "NameThree",
+              "type": "AMAZON.FirstName"
+            },
+            {
+              "name": "NameFour",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "name": "negativeTeamOne",
+          "samples": [
+            "we didnt make our tricks",
+            "we are in the hole",
+            "we got set",
+            "we were set"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "number",
+              "type": "customNumberA"
+            }
+          ],
+          "name": "ourMade",
+          "samples": [
+            "we made {number} over",
+            "we took a {number} tricks",
+            "we made an {number}",
+            "we took a {number}",
+            "we have a {number}",
+            "we made {number} tricks",
+            "we booked a {number}",
+            "we made {number}",
+            "we made a {number}",
+            "we made our {number}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "number",
+              "type": "customNumberA"
+            }
+          ],
+          "name": "theirMade",
+          "samples": [
+            " they went  for a {number}",
+            "they made {number} over",
+            "they took a {number} tricks",
+            "they had the {number}",
+            "they got a {number}",
+            "they booked {number}",
+            "they made {number} tricks",
+            "they made a {number}",
+            "they made {number}",
+            "they made their {number}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "thirteen",
+                  "thirtteen"
+                ],
+                "value": "13"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "twelve"
+                ],
+                "value": "12"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "eleven"
+                ],
+                "value": "11"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "ten"
+                ],
+                "value": "10"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "nine"
+                ],
+                "value": "9"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "eight"
+                ],
+                "value": "8"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "seven"
+                ],
+                "value": "7"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "six"
+                ],
+                "value": "6"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "five"
+                ],
+                "value": "5"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "four"
+                ],
+                "value": "4"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "three"
+                ],
+                "value": "3"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "two"
+                ],
+                "value": "2"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "one"
+                ],
+                "value": "1"
+              }
+            }
+          ],
+          "name": "customNumberA"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "13"
+              }
+            },
+            {
+              "name": {
+                "value": "12"
+              }
+            },
+            {
+              "name": {
+                "value": "11"
+              }
+            },
+            {
+              "name": {
+                "value": "10"
+              }
+            },
+            {
+              "name": {
+                "value": "9"
+              }
+            },
+            {
+              "name": {
+                "value": "8"
+              }
+            },
+            {
+              "name": {
+                "value": "7"
+              }
+            },
+            {
+              "name": {
+                "value": "6"
+              }
+            },
+            {
+              "name": {
+                "value": "5"
+              }
+            },
+            {
+              "name": {
+                "value": "4"
+              }
+            },
+            {
+              "name": {
+                "value": "3"
+              }
+            },
+            {
+              "name": {
+                "value": "2"
+              }
+            },
+            {
+              "name": {
+                "value": "1"
+              }
+            }
+          ],
+          "name": "customNumberB"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "130"
+              }
+            },
+            {
+              "name": {
+                "value": "120"
+              }
+            },
+            {
+              "name": {
+                "value": "110"
+              }
+            },
+            {
+              "name": {
+                "value": "100"
+              }
+            },
+            {
+              "name": {
+                "value": "90"
+              }
+            },
+            {
+              "name": {
+                "value": "80"
+              }
+            },
+            {
+              "name": {
+                "value": "70"
+              }
+            },
+            {
+              "name": {
+                "value": "60"
+              }
+            },
+            {
+              "name": {
+                "value": "50"
+              }
+            },
+            {
+              "name": {
+                "value": "40"
+              }
+            },
+            {
+              "name": {
+                "value": "30"
+              }
+            },
+            {
+              "name": {
+                "value": "20"
+              }
+            },
+            {
+              "name": {
+                "value": "10"
+              }
+            }
+          ],
+          "name": "teamScoreA"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "130"
+              }
+            },
+            {
+              "name": {
+                "value": "120"
+              }
+            },
+            {
+              "name": {
+                "value": "110"
+              }
+            },
+            {
+              "name": {
+                "value": "100"
+              }
+            },
+            {
+              "name": {
+                "value": "90"
+              }
+            },
+            {
+              "name": {
+                "value": "80"
+              }
+            },
+            {
+              "name": {
+                "value": "70"
+              }
+            },
+            {
+              "name": {
+                "value": "60"
+              }
+            },
+            {
+              "name": {
+                "value": "50"
+              }
+            },
+            {
+              "name": {
+                "value": "40"
+              }
+            },
+            {
+              "name": {
+                "value": "30"
+              }
+            },
+            {
+              "name": {
+                "value": "20"
+              }
+            },
+            {
+              "name": {
+                "value": "10"
+              }
+            }
+          ],
+          "name": "teamScoreB"
+        }
+      ],
+      "invocationName": "spades live"
+    }
+  }
+}

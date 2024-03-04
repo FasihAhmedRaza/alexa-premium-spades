@@ -1,0 +1,94 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Track Live Spades Game Scores with Alexa",
+          "examplePhrases": [
+            "Alexa, open spades live",
+            "Alexa, launch spades live",
+            "Alexa, lets play spades live"
+          ],
+          "keywords": [
+            "spades",
+            "spades",
+            "game",
+            "spades",
+            "live",
+            "premium",
+            "spades",
+            "spades",
+            "card",
+            "game",
+            "spades",
+            "night",
+            "spades",
+            "scores"
+          ],
+          "name": "spades live",
+          "description": "Ditch the pen and paper and let Alexa keep track of your Spades scores. Simply command Alexa to track and record your bids and she will handle the calculations.",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "{\"ask_dist_username\":\"\",\"ask_dist_password\":\"\",\"ask_dist_testing_instructions\":\"Sample Testing Instructions.\"}",
+      "category": "CARD_GAMES",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:158584789923:function:09d3b24f-fb2e-4d00-a308-1e25e1449d5c:Release_0"
+        },
+        "interfaces": [],
+        "locales": {},
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:158584789923:function:09d3b24f-fb2e-4d00-a308-1e25e1449d5c:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:158584789923:function:09d3b24f-fb2e-4d00-a308-1e25e1449d5c:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:158584789923:function:09d3b24f-fb2e-4d00-a308-1e25e1449d5c:Release_0"
+            }
+          }
+        },
+        "tasks": [
+          {
+            "name": "CalculatePoints",
+            "version": "1"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": true,
+      "locales": {
+        "en-US": {
+          "termsOfUseUrl": "https://www.spades-brand.com/post/privacy-policy-spades-live",
+          "privacyPolicyUrl": "https://www.spades-brand.com/post/privacy-policy-spades-live"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "shoppingKit": {
+        "isShoppingActionsEnabled": true,
+        "isAmazonAssociatesOnAlexaEnabled": false
+      },
+      "usesPersonalInfo": false
+    }
+  }
+}
